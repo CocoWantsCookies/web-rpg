@@ -1,0 +1,98 @@
+html {
+    height: 100%;
+    background-image: url("https://supportivy.com/wp-content/uploads/2020/08/pixel-art-landscape-Idees-designs-photo-1140x570.png");
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    color: white;
+    font-family: monospace;
+}
+
+.game {
+    height: 95vh;
+    width: 70vw;
+    margin: auto;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    
+    background-color: rgb(45, 83, 90);
+}
+
+.window {
+    margin: 20px;
+    margin-bottom: 0;
+    min-height: 33%;
+    border-radius: 10px;
+}
+
+#inventory {
+    background-color: rgb(59, 51, 43);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#console {
+    height: 100%;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    
+    background-color: rgb(0, 0, 0);    
+}
+
+.console-history {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.console-in-log,
+.console-out-log {
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 3px;
+    padding-left: 6px;
+}
+
+.console-in-log:hover,
+.console-out-log:hover {
+    background-color: rgb(36, 36, 36);
+}
+
+.console-out-log {
+    color: yellow;
+}
+
+.console-input {
+    border-radius: 0 0 9px 9px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    flex-shrink: 0;
+    border: none;
+    outline: none;
+    background: rgb(71, 71, 71);
+    transition: background 0.2s;
+}
+
+.console-input:hover,
+.console-input:focus {
+    background: rgb(83, 83, 83);
+}
