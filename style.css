@@ -34,7 +34,6 @@ body {
 .window {
     margin: 20px;
     margin-bottom: 0;
-    min-height: 33%;
     border-radius: 10px;
 }
 
@@ -63,21 +62,16 @@ body {
     overflow-y: auto;
 }
 
-.console-in-log,
-.console-out-log {
+.console-log {
     border-radius: 5px;
     box-sizing: border-box;
     padding: 3px;
     padding-left: 6px;
+    font-size: 2vh;
 }
 
-.console-in-log:hover,
-.console-out-log:hover {
+.console-log:hover {
     background-color: rgb(36, 36, 36);
-}
-
-.console-out-log {
-    color: yellow;
 }
 
 .console-input {
@@ -85,6 +79,8 @@ body {
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
+    height: 5vh;
+    font-size: 2vh;
     flex-shrink: 0;
     border: none;
     outline: none;
