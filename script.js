@@ -97,7 +97,8 @@ consoleInput.addEventListener("keyup", key => {
         if (waitInput[0] == 1) {
             eval(`${waitInput[1]} = "${code}"`);
             waitInput[0] = 0;
-            logConsole(`So your name is ${playerName}`)
+            logConsole(`So your name is ${playerName}`);
+            logConsole("Try \"help\" if you have any question");
             return;
         } else {
             handleInput(code);
